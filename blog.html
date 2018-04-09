@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from serv.neonweb.me/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 13:12:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <!--meta tags-->
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Services Listing HTML5 CSS3 template">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, services, listing">
+    <meta name="author" content="Ui-DesignLab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--end meta tags-->
+
+    <title>Serv</title>
+
+    <!--stylesheets-->
+
+    <link rel="stylesheet" href="3rdparty/css/bootstrap.min.css">
+    <link rel="stylesheet" href="3rdparty/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="3rdparty/css/animate.min.css">
+    <link rel="stylesheet" href="3rdparty/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="3rdparty/OwlCarousel2-2.2.1/owl.carousel.min.css">
+    <link rel="stylesheet" href="3rdparty/OwlCarousel2-2.2.1/owl.theme.green.min.css">
+    <link rel="stylesheet" href="3rdparty/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!--end stylesheets-->
+
+    <!--google fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Raleway|Tangerine" rel="stylesheet">
+    <!--end google fonts-->
+
+</head>
+<body>
+<!-- Login/register Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">My Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="auth-wrapper">
+                    <div class="form-tabs">
+                        <a href="#" data-frm="login-frm" class="tab active">Login</a>
+                        <a href="#" data-frm="register-frm" class="tab">Register</a>
+                    </div>
+                    <form class="login-frm frm" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email1">Email:</label>
+                            <input type="email" required name="email" autocomplete="email" id="email1">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass1">Password:</label>
+                            <input type="password" required name="password" id="pass1">
+                        </div>
+                        <div class="remember-me">
+                            <div>
+                                <input type="checkbox" id="test1" />
+                                <label for="test1">Remember Me</label>
+                            </div>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <div class="sub-btn">
+                            <input type="submit" class="btn ui-btn info" value="SIGN IN">
+                        </div>
+                    </form>
+                    <form class="register-frm frm hide" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email2">Email:</label>
+                            <input type="email" required name="email" autocomplete="email" id="email2">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass3">Password:</label>
+                            <input type="password" required name="password" id="pass3">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass2">Confirm Password:</label>
+                            <input type="password" required name="password" id="pass2">
+                        </div>
+                        <div class="sub-btn">
+                            <input type="submit" class="btn ui-btn info" value="REGISTER">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Login/register Modal -->
+
+<!--top navbar-->
+<nav class="ui-nav">
+    <div class="logo"><a href="index-2.html">Serv</a></div>
+    <ul class="list-unstyled menu">
+        <li class="list-inline-item menu-li">
+            <a href="#">Home <i class="fa fa-angle-down"></i></a>
+            <ul class="list-unstyled drop">
+                <li><a href="index-2.html">Home v. one</a></li>
+                <li><a href="index2.html">Home v. two</a></li>
+            </ul>
+        </li>
+        <li class="list-inline-item menu-li">
+            <a href="#">Listings <i class="fa fa-angle-down"></i></a>
+            <ul class="list-unstyled drop">
+                <li><a href="listing_one.html">Listing one</a></li>
+                <li><a href="listing_one_sidebar.html">Listing Sidebar</a></li>
+                <li><a href="listing_two.html">Listing Horizontal</a></li>
+                <li><a href="listingdetail.html">Listing Detail</a></li>
+            </ul>
+        </li>
+        <li class="list-inline-item menu-li">
+            <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+            <ul class="list-unstyled drop">
+                <li><a href="blog.html">Blog Posts</a></li>
+                <li><a href="blogSingle.html">Single Post</a></li>
+            </ul>
+        </li>
+        <li class="list-inline-item menu-li">
+            <a href="#">Dashboard <i class="fa fa-angle-down"></i></a>
+            <ul class="list-unstyled drop">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="dashMessages.html">Messages</a></li>
+                <li><a href="dashReviews.html">Reviews</a></li>
+                <li><a href="dashProfile.html">Profile</a></li>
+                <li><a href="dashListings.html">Listings</a></li>
+                <li><a href="dashAddListing.html">AddListing</a></li>
+            </ul>
+        </li>
+        <li class="list-inline-item menu-li"><a href="pricing.html">Pricing</a></li>
+        <li class="list-inline-item menu-li"><a href="contact.html">Contact</a></li>
+        <li class="list-inline-item menu-li"><a href="#" data-toggle="modal" data-target="#Modal">Account</a></li>
+        <li class="list-inline-item menu-li">
+            <a href="#" class="notifs">
+                <i class="fa fa-bell"></i>
+                <span class="info">5</span>
+            </a>
+            <ul class="list-unstyled notifications">
+                <li><a href="dashMessages.html">You have new mes...</a></li>
+                <li><a href="dashMessages.html">Logging was complet...</a></li>
+                <li><a href="dashMessages.html">You have new mes...</a></li>
+                <li><a href="dashMessages.html">You have new mes...</a></li>
+                <li><a href="dashMessages.html">Logging was complet...</a></li>
+            </ul>
+        </li>
+        <li class="list-inline-item menu-li"><a href="dashMessages.html" class="notifs">
+            <i class="fa fa-envelope"></i>
+            <span class="danger">7</span>
+        </a></li>
+        <li class="list-inline-item menu-li">
+            <a href="dashProfile.html"><img src="img/avatar2.jpg" alt=""></a>
+        </li>
+    </ul>
+    <i class="fa fa-bars open-menu"></i>
+</nav>
+<!--end top navbar-->
+
+<!--side menu-->
+<div class="side-menu" id="side-menu">
+    <div class="side-menu-c">
+        <div class="side-logo">
+            <a href="index-2.html">Serv</a>
+            <i class="fa fa-times close-menu"></i>
+        </div>
+        <ul class="list-unstyled mini">
+            <li><a href="index-2.html">Home</a></li>
+            <li><a href="listing_one.html">Listings</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#Modal">Account</a></li>
+        </ul>
+    </div>
+</div>
+<!--end side menu-->
+
+<div class="content-wrapper">
+
+<!--blog posts container-->
+    <div class="blog-container">
+       <div class="row">
+           <div class="col-lg-9 col-md-8">
+               <!--posts-->
+               <div class="box">
+                    <div class="post">
+                        <img src="img/ride.jpg" alt="">
+
+                        <div class="post-content">
+                            <div class="post-tags">
+                                <span>Inspiration</span>
+                                <span>Lifestyle</span>
+                            </div>
+                            <h5 class="post-title">Ham hock shank hamburger swine, pig rump filet mignon porchetta. Sausage ground round swine</h5>
+                            <p>
+                                Salami pastrami prosciutto venison bacon short ribs.
+                                Ribeye shoulder tail pig. Turducken tenderloin drumstick
+                                alcatra ribeye doner kielbasa jowl venison pork belly brisket
+                                shankle hamburger porchetta. Ham hock shank hamburger swine,
+                                pig rump filet mignon porchetta. Sausage ground round swine
+                                corned beef sirloin hamburger shank pork loin jowl short loin
+                                pork
+                            </p>
+                        </div>
+
+                        <div class="post-action">
+                            <span class="date">March 27, 2018</span>
+                            <div class="social">
+                                <i class="fa fa-facebook-f"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-pinterest-p"></i>
+                            </div>
+                            <a href="blogSingle.html" class="read-more">Read More</a>
+                        </div>
+
+                    </div>
+               </div>
+               <div class="box">
+                    <div class="post">
+                        <img src="img/dancers.jpg" alt="">
+
+                        <div class="post-content">
+                            <div class="post-tags">
+                                <span>Inspiration</span>
+                                <span>Lifestyle</span>
+                            </div>
+                            <h5 class="post-title">Ham hock shank hamburger swine, pig rump filet mignon porchetta. Sausage ground round swine</h5>
+                            <p>
+                                Salami pastrami prosciutto venison bacon short ribs.
+                                Ribeye shoulder tail pig. Turducken tenderloin drumstick
+                                alcatra ribeye doner kielbasa jowl venison pork belly brisket
+                                shankle hamburger porchetta. Ham hock shank hamburger swine,
+                                pig rump filet mignon porchetta. Sausage ground round swine
+                                corned beef sirloin hamburger shank pork loin jowl short loin
+                                pork
+                            </p>
+                        </div>
+
+                        <div class="post-action">
+                            <span class="date">March 27, 2018</span>
+                            <div class="social">
+                                <i class="fa fa-facebook-f"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-pinterest-p"></i>
+                            </div>
+                            <a href="blogSingle.html" class="read-more">Read More</a>
+                        </div>
+
+                    </div>
+               </div>
+               <div class="box">
+                    <div class="post">
+                        <img src="img/lady.jpg" alt="">
+
+                        <div class="post-content">
+                            <div class="post-tags">
+                                <span>Inspiration</span>
+                                <span>Lifestyle</span>
+                            </div>
+                            <h5 class="post-title">Ham hock shank hamburger swine, pig rump filet mignon porchetta. Sausage ground round swine</h5>
+                            <p>
+                                Salami pastrami prosciutto venison bacon short ribs.
+                                Ribeye shoulder tail pig. Turducken tenderloin drumstick
+                                alcatra ribeye doner kielbasa jowl venison pork belly brisket
+                                shankle hamburger porchetta. Ham hock shank hamburger swine,
+                                pig rump filet mignon porchetta. Sausage ground round swine
+                                corned beef sirloin hamburger shank pork loin jowl short loin
+                                pork
+                            </p>
+                        </div>
+
+                        <div class="post-action">
+                            <span class="date">March 27, 2018</span>
+                            <div class="social">
+                                <i class="fa fa-facebook-f"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-pinterest-p"></i>
+                            </div>
+                            <a href="blogSingle.html" class="read-more">Read More</a>
+                        </div>
+
+                    </div>
+               </div>
+               <div class="box">
+                    <div class="post">
+                        <img src="img/paint.jpg" alt="">
+
+                        <div class="post-content">
+                            <div class="post-tags">
+                                <span>Inspiration</span>
+                                <span>Lifestyle</span>
+                            </div>
+                            <h5 class="post-title">Ham hock shank hamburger swine, pig rump filet mignon porchetta. Sausage ground round swine</h5>
+                            <p>
+                                Salami pastrami prosciutto venison bacon short ribs.
+                                Ribeye shoulder tail pig. Turducken tenderloin drumstick
+                                alcatra ribeye doner kielbasa jowl venison pork belly brisket
+                                shankle hamburger porchetta. Ham hock shank hamburger swine,
+                                pig rump filet mignon porchetta. Sausage ground round swine
+                                corned beef sirloin hamburger shank pork loin jowl short loin
+                                pork
+                            </p>
+                        </div>
+
+                        <div class="post-action">
+                            <span class="date">March 27, 2018</span>
+                            <div class="social">
+                                <i class="fa fa-facebook-f"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-pinterest-p"></i>
+                            </div>
+                            <a href="blogSingle.html" class="read-more">Read More</a>
+                        </div>
+
+                    </div>
+               </div>
+               <!--end posts-->
+               <div class="ui-pagination">
+                   <a href="#" class="page"><i class="fa fa-angle-left"></i></a>
+                   <a href="#" class="page">1</a>
+                   <a href="#" class="page info text-white">2</a>
+                   <a href="#" class="page">3</a>
+                   <a href="#" class="page">4</a>
+                   <a href="#" class="page"><i class="fa fa-angle-right"></i></a>
+               </div>
+           </div>
+           <div class="col-lg-3 col-md-4">
+               <div class="box">
+                   <div class="pad">
+                       <div class="search-box">
+                           <input type="text" placeholder="Search">
+                           <span><i class="fa fa-search"></i></span>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="box">
+                   <div class="pad">
+                       <p class="text-center"><strong>About Us</strong></p>
+                       <div class="abt">
+                           <div class="abt-img">
+                               <img src="img/people%20laughing_0.jpg" alt="">
+                           </div>
+                          <span>
+                               Ham hock shank hamburger swine, pig rump filet mignon porchetta.
+                           Sausage ground round swine corned beef sirloin hamburger
+                           shank pork loin jowl
+                          </span>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="box">
+                   <div class="pad">
+                       <p class="text-center"><strong>Let's Connect</strong></p>
+                       <div class="connect-social">
+                           <a href="#"><i class="fa fa-twitter"></i></a>
+                           <a href="#"><i class="fa fa-facebook-f"></i></a>
+                           <a href="#"><i class="fa fa-linkedin"></i></a>
+                           <a href="#"><i class="fa fa-google-plus"></i></a>
+                           <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="box">
+                   <div class="pad">
+                       <p class="text-center"><strong>Recent Stories</strong></p>
+                       <div class="recent-stories">
+                           <a href="#">Happiness consists of Salami pastrami prosciu...</a>
+                           <a href="#">Happiness consists of Salami pastrami prosciu...</a>
+                           <a href="#">Consists of Salami pastrami prosciu...</a>
+                           <a href="#">Of Salami pastrami prosciu...</a>
+                           <a href="#">Happiness consists of Salami pastrami prosciu...</a>
+                           <a href="#">Appine consists of Salami pastrami prosciu...</a>
+                           <a href="#">Hpin consists of Salami pastrami prosciu...</a>
+                           <a href="#">Happiness consists of Salami pastrami prosciu...</a>
+                           <a href="#">Happiness consists of Salami pastrami prosciu...</a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="box">
+                   <div class="pad">
+                       <p class="text-center"><strong>Subscribe</strong></p>
+                       <div class="search-box">
+                           <input type="text" placeholder="Email">
+                           <span><i class="fa fa-envelope-o"></i></span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+<!--end blog posts container-->
+
+</div>
+
+<!--footer section-->
+<div class="footer">
+    <div class="row">
+        <div class="col-lg-2 col-md-6">
+            <div class="footer-sec">
+                <h6>Who We Are</h6>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Feature Tour</a>
+                <a href="#">Presentation</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-sec">
+                <h6>Support</h6>
+                <a href="#">Knowledge Base</a>
+                <a href="#">Video Guides</a>
+                <a href="#">Report an Issue</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-sec">
+                <h6>Contact Us</h6>
+                <a href="mailto:someone@example.com">someone@example.com</a>
+                <span>10100 thuy NY</span>
+                <span>+1 285 6658 5476215</span>
+                <div class="footer-social">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-rss"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-google-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="footer-sec">
+                <h6>News Letter</h6>
+                <span>Subscribe to our newsletter and getter some cool staff every week.</span>
+                <form action="http://serv.neonweb.me/" method="post">
+                    <input type="email" required placeholder="Your Email Here">
+                    <button type="submit" class="btn ui-btn dark-blue"><i class="fa fa-send-o"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-strip">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <h3 class="footer-logo">Serv</h3>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <nav>
+                    <a href="#">Apps</a>
+                    <a href="#">Science</a>
+                    <a href="#">Services</a>
+                    <a href="#">Nature</a>
+                    <a href="#">Creative</a>
+                    <a href="#">Search</a>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <p class="copyright"><i  class="fa fa-copyright"></i> 2017 - todate Ui-DesignLab</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end footer section-->
+
+<!--pre-loader-->
+<div class="preloader"><span class="beacon"></span></div>
+<!--end pre-loader-->
+
+<script src="3rdparty/js/jquery-3.2.1.min.js"></script>
+<script src="3rdparty/js/popper.js"></script>
+<script src="3rdparty/js/bootstrap.js"></script>
+<script src="3rdparty/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+<script src="3rdparty/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+<script src="3rdparty/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+<!-- Mirrored from serv.neonweb.me/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 13:13:28 GMT -->
+</html>
